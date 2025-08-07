@@ -1,0 +1,96 @@
+# Solvine Systems - Unified Configuration
+# Centralized config management with Jasper head agent integration
+
+system:
+  name: "Solvine Systems"
+  version: "2.0.0"
+  head_agent: "jasper"
+  mode: "autonomous_collective"
+
+# Head agent configuration
+head_agent:
+  name: "jasper"
+  type: "voice_tone_controller"
+  authority_level: "system_wide"
+  autonomy_features:
+    level: "high"
+    boundary_enforcement: true
+    independent_decisions: true
+    workshop_authority: true
+    voice_tone_control: true
+
+# Agent collective configuration
+agents:
+  jasper:
+    type: "head_agent"
+    role: "Voice-Tone Controller / Workshop Authority / Boundary Enforcement"
+    config_path: "agents/jasper/config/"
+    autonomy_level: "high"
+    authority: "system_wide"
+    voice_control: true
+    
+  # Placeholder for other agents
+  # midas:
+  #   type: "financial_agent"
+  #   role: "Financial Analysis & Strategy"
+  #   autonomy_level: "moderate"
+  #   authority: "domain_specific"
+  
+  # veilsynth:
+  #   type: "myth_guardian"
+  #   role: "Narrative & Myth Management"
+  #   autonomy_level: "moderate"
+  #   authority: "domain_specific"
+
+# System-wide settings
+system_settings:
+  memory_backend: "sqlite_with_autonomy_metadata"
+  session_management: "autonomous"
+  error_recovery: "agent_controlled"
+  voice_tone_consistency: "jasper_enforced"
+  
+# Interface configuration
+interfaces:
+  cli:
+    default_mode: "interactive"
+    local_mode_available: true
+    jasper_integration: true
+    autonomy_status_display: true
+    
+  api:
+    host: "localhost"
+    port: 8000
+    jasper_endpoints: true
+    autonomy_metadata: true
+    
+  web:
+    enabled: false
+    jasper_chat_interface: true
+
+# Development settings
+development:
+  debug_mode: false
+  verbose_logging: true
+  autonomy_debug: false
+  workshop_protocol_logging: true
+
+# Environment configurations
+environments:
+  base:
+    agents_active: ["jasper"]
+    autonomy_features: "full"
+    
+  dev:
+    extends: "base"
+    debug_mode: true
+    verbose_logging: true
+    
+  prod:
+    extends: "base"
+    debug_mode: false
+    optimized_performance: true
+    
+  sandbox:
+    extends: "base"
+    experimental_features: true
+    autonomy_testing: true

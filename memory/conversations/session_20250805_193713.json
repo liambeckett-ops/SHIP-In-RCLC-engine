@@ -1,0 +1,99 @@
+{
+  "messages": [
+    {
+      "timestamp": "2025-08-05T19:37:19.185318",
+      "speaker": "user",
+      "message": "memories",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 8,
+      "message_id": "fc2e8fe7"
+    },
+    {
+      "timestamp": "2025-08-05T19:37:40.028572",
+      "speaker": "user",
+      "message": "hello",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 5,
+      "message_id": "c3ab956f"
+    },
+    {
+      "timestamp": "2025-08-05T19:37:49.791881",
+      "speaker": "jasper",
+      "message": "",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 0,
+      "message_id": "df9d5381"
+    },
+    {
+      "timestamp": "2025-08-05T19:37:50.861468",
+      "speaker": "user",
+      "message": "import",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 6,
+      "message_id": "697f8411"
+    },
+    {
+      "timestamp": "2025-08-05T19:39:18.909371",
+      "speaker": "user",
+      "message": "import C:\\Users\\rebek\\Downloads\\solvine_memory_bundle_v2.zip",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 60,
+      "message_id": "76f81457"
+    },
+    {
+      "timestamp": "2025-08-05T19:42:28.864469",
+      "speaker": "user",
+      "message": "ls C:\\Users\\rebek\\Downloads",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 27,
+      "message_id": "4a62a104"
+    },
+    {
+      "timestamp": "2025-08-05T19:42:41.130569",
+      "speaker": "jasper",
+      "message": "",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 0,
+      "message_id": "7b1834ae"
+    }
+  ],
+  "agents_involved": [
+    "jasper"
+  ],
+  "session_start": "2025-08-05T19:37:13.011900",
+  "session_end": "2025-08-05T19:42:41.130569",
+  "privacy_level": "normal",
+  "tags": [],
+  "auto_tags": [
+    "boundary_work"
+  ],
+  "emotional_tone": "neutral",
+  "topic_summary": "",
+  "agent_interactions": {
+    "jasper": {
+      "message_count": 2,
+      "role": "Boundary enforcement, emotional override, contradiction mirror",
+      "collaboration_with": [],
+      "primary_responses": 0,
+      "support_responses": 0
+    }
+  },
+  "user_mood": "stable",
+  "session_quality": "good",
+  "session_id": "session_20250805_193713",
+  "title": "Session ended normally"
+}

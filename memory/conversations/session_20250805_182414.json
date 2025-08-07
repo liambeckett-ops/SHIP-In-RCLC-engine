@@ -1,0 +1,671 @@
+{
+  "messages": [
+    {
+      "timestamp": "2025-08-05T18:24:23.118343",
+      "speaker": "user",
+      "message": "echo \"Initialization check\"",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 27,
+      "message_id": "2f1f68d3"
+    },
+    {
+      "timestamp": "2025-08-05T18:24:23.119343",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "869a7167"
+    },
+    {
+      "timestamp": "2025-08-05T18:25:07.817542",
+      "speaker": "user",
+      "message": "memory",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 6,
+      "message_id": "e16e9584"
+    },
+    {
+      "timestamp": "2025-08-05T18:25:54.371812",
+      "speaker": "user",
+      "message": "memories",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 8,
+      "message_id": "7dc3e98e"
+    },
+    {
+      "timestamp": "2025-08-05T18:40:16.266628",
+      "speaker": "user",
+      "message": "C: \\Users\\rebek\\Downloads\\solvine_memory_bundle_v2.zip",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 54,
+      "message_id": "b3f7ca11"
+    },
+    {
+      "timestamp": "2025-08-05T18:40:16.266628",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "ea186a06"
+    },
+    {
+      "timestamp": "2025-08-05T18:44:20.597069",
+      "speaker": "user",
+      "message": "cd \"c:\\Users\\rebek\\OneDrive\\Documents\\Schoolwork\\Programming\\Personal Projects\\Solvine_Systems\"",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 95,
+      "message_id": "06f0eaf6"
+    },
+    {
+      "timestamp": "2025-08-05T18:44:20.598514",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "5d7ac0ce"
+    },
+    {
+      "timestamp": "2025-08-05T18:55:17.397697",
+      "speaker": "user",
+      "message": "import C:\\Users\\rebek\\Downloads\\solvine_memory_bundle_v2.zip",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 60,
+      "message_id": "8478197b"
+    },
+    {
+      "timestamp": "2025-08-05T18:55:17.397697",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "74238512"
+    },
+    {
+      "timestamp": "2025-08-05T18:56:24.859793",
+      "speaker": "user",
+      "message": "python --version",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 16,
+      "message_id": "32e1413d"
+    },
+    {
+      "timestamp": "2025-08-05T18:56:24.859793",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "7a9ce75c"
+    },
+    {
+      "timestamp": "2025-08-05T18:59:39.250928",
+      "speaker": "user",
+      "message": "cd \"c:\\Users\\rebek\\OneDrive\\Documents\\Schoolwork\\Programming\\Personal Projects\\Solvine_Systems\" && echo \"hello\" | python talk_to_agents.py",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 138,
+      "message_id": "4fbe7329"
+    },
+    {
+      "timestamp": "2025-08-05T18:59:39.251927",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "b8c6f2dd"
+    },
+    {
+      "timestamp": "2025-08-05T18:59:43.005358",
+      "speaker": "user",
+      "message": "Hello!",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 6,
+      "message_id": "97604d17"
+    },
+    {
+      "timestamp": "2025-08-05T18:59:43.005358",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "7b7ee464"
+    },
+    {
+      "timestamp": "2025-08-05T19:00:10.372582",
+      "speaker": "user",
+      "message": "cd \"c:\\Users\\rebek\\OneDrive\\Documents\\Schoolwork\\Programming\\Personal Projects\\Solvine_Systems\" && echo \"hello\" | python talk_to_agents.py",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 138,
+      "message_id": "460c7824"
+    },
+    {
+      "timestamp": "2025-08-05T19:00:10.372582",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "19a03a87"
+    },
+    {
+      "timestamp": "2025-08-05T19:01:53.170160",
+      "speaker": "user",
+      "message": "cd \"c:\\Users\\rebek\\OneDrive\\Documents\\Schoolwork\\Programming\\Personal Projects\\Solvine_Systems\" && echo \"hello\" | python talk_to_agents.py",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 138,
+      "message_id": "7414e302"
+    },
+    {
+      "timestamp": "2025-08-05T19:01:53.170160",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "adec63d4"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.463040",
+      "speaker": "user",
+      "message": "cd \"c:\\Users\\rebek\\OneDrive\\Documents\\Schoolwork\\Programming\\Personal Projects\\Solvine_Systems\" && python -c \"",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 110,
+      "message_id": "b7c1e815"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.464194",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "1eae1bbb"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.464194",
+      "speaker": "user",
+      "message": "import sys",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 10,
+      "message_id": "26766feb"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.464194",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "1eae1bbb"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.465191",
+      "speaker": "user",
+      "message": "import traceback",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 16,
+      "message_id": "d658181c"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.465191",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "30495cd7"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.465191",
+      "speaker": "user",
+      "message": "try:",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 4,
+      "message_id": "0cc4fdce"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.466197",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "5a36c718"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.493771",
+      "speaker": "user",
+      "message": "from talk_to_agents import SimpleAgent, loader, OllamaModel",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 59,
+      "message_id": "6ee8ee68"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.494896",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "224bae6d"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.509110",
+      "speaker": "user",
+      "message": "agent = SimpleAgent('jasper', loader.get_agent_config('jasper'))",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 64,
+      "message_id": "10c8af18"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.509110",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "73245c38"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.525356",
+      "speaker": "user",
+      "message": "response = agent.respond('hello')",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 33,
+      "message_id": "345d824b"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.525356",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "17378826"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.526369",
+      "speaker": "user",
+      "message": "print('Response:', response)",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 28,
+      "message_id": "070a18cd"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.526369",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "213c9cb6"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.539954",
+      "speaker": "user",
+      "message": "except Exception as e:",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 22,
+      "message_id": "5020feae"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.539954",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "300ffec3"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.539954",
+      "speaker": "user",
+      "message": "print('Error:', str(e))",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 23,
+      "message_id": "9eeea923"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.541391",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "c93b6e34"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.556002",
+      "speaker": "user",
+      "message": "traceback.print_exc()",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 21,
+      "message_id": "e0d31485"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.556002",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "4c60efc6"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.557058",
+      "speaker": "user",
+      "message": "\"",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 1,
+      "message_id": "dbaeba6c"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:04.557058",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "57f052c6"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:42.562425",
+      "speaker": "user",
+      "message": "cd \"c:\\Users\\rebek\\OneDrive\\Documents\\Schoolwork\\Programming\\Personal Projects\\Solvine_Systems\" && echo \"hello\" | python talk_to_agents.py",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 138,
+      "message_id": "be1c22ad"
+    },
+    {
+      "timestamp": "2025-08-05T19:02:42.562425",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "95ae6dfd"
+    },
+    {
+      "timestamp": "2025-08-05T19:04:02.810234",
+      "speaker": "user",
+      "message": "cd \"c:\\Users\\rebek\\OneDrive\\Documents\\Schoolwork\\Programming\\Personal Projects\\Solvine_Systems\" && echo \"hello\" | python talk_to_agents.py",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 138,
+      "message_id": "8e1f8c4f"
+    },
+    {
+      "timestamp": "2025-08-05T19:04:02.811481",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "bd14db03"
+    },
+    {
+      "timestamp": "2025-08-05T19:05:54.362193",
+      "speaker": "user",
+      "message": "cd \"c:\\Users\\rebek\\OneDrive\\Documents\\Schoolwork\\Programming\\Personal Projects\\Solvine_Systems\" && python debug_generator.py",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 124,
+      "message_id": "65dcfd77"
+    },
+    {
+      "timestamp": "2025-08-05T19:05:54.363260",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "44359783"
+    },
+    {
+      "timestamp": "2025-08-05T19:06:04.578189",
+      "speaker": "user",
+      "message": "cd \"c:\\Users\\rebek\\OneDrive\\Documents\\Schoolwork\\Programming\\Personal Projects\\Solvine_Systems\" && python -c \"from Solvine.yaml_agent_loader import YAMLAgentLoader; print('YAML Loader imported')\"",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 195,
+      "message_id": "69988e15"
+    },
+    {
+      "timestamp": "2025-08-05T19:06:04.578189",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "bcc7e90a"
+    },
+    {
+      "timestamp": "2025-08-05T19:06:40.634489",
+      "speaker": "user",
+      "message": "cd \"c:\\Users\\rebek\\OneDrive\\Documents\\Schoolwork\\Programming\\Personal Projects\\Solvine_Systems\" && python -c \"from Solvine.yaml_agent_loader import YAMLAgentLoader; print('YAML Loader imported successfully')\"",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 208,
+      "message_id": "7f02ac58"
+    },
+    {
+      "timestamp": "2025-08-05T19:06:40.634489",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "bd466ed2"
+    },
+    {
+      "timestamp": "2025-08-05T19:07:02.639045",
+      "speaker": "user",
+      "message": "tasklist | findstr python",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 25,
+      "message_id": "dd830909"
+    },
+    {
+      "timestamp": "2025-08-05T19:07:02.639045",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "b6fc6383"
+    },
+    {
+      "timestamp": "2025-08-05T19:07:23.635876",
+      "speaker": "user",
+      "message": "tasklist /FI \"IMAGENAME eq python.exe\"",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 38,
+      "message_id": "dec85a81"
+    },
+    {
+      "timestamp": "2025-08-05T19:07:23.636598",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "60ccfc2c"
+    },
+    {
+      "timestamp": "2025-08-05T19:07:54.203764",
+      "speaker": "user",
+      "message": "Get-Job | Stop-Job; Get-Job | Remove-Job",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 40,
+      "message_id": "ca462719"
+    },
+    {
+      "timestamp": "2025-08-05T19:07:54.203764",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "b45350b2"
+    },
+    {
+      "timestamp": "2025-08-05T19:26:50.828464",
+      "speaker": "user",
+      "message": "pwd",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 3,
+      "message_id": "a7d9b55d"
+    },
+    {
+      "timestamp": "2025-08-05T19:26:50.829861",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "6c982103"
+    },
+    {
+      "timestamp": "2025-08-05T19:27:14.899062",
+      "speaker": "user",
+      "message": "Get-Location",
+      "agent_role": null,
+      "context": null,
+      "emotional_indicators": [],
+      "message_length": 12,
+      "message_id": "712d49e1"
+    },
+    {
+      "timestamp": "2025-08-05T19:27:14.899062",
+      "speaker": "jasper",
+      "message": "[jasper is thinking... Demo mode active - Error: 'generator' object has no attribute 'lower']",
+      "agent_role": "Boundary enforcement, emotional override, contradiction mirror",
+      "context": "",
+      "emotional_indicators": [],
+      "message_length": 93,
+      "message_id": "fe67c23e"
+    }
+  ],
+  "agents_involved": [
+    "jasper"
+  ],
+  "session_start": "2025-08-05T18:24:14.125308",
+  "session_end": "2025-08-05T19:27:22.659886",
+  "privacy_level": "normal",
+  "tags": [],
+  "auto_tags": [
+    "technical",
+    "boundary_work",
+    "personal"
+  ],
+  "emotional_tone": "reflective",
+  "topic_summary": "",
+  "agent_interactions": {
+    "jasper": {
+      "message_count": 31,
+      "role": "Boundary enforcement, emotional override, contradiction mirror",
+      "collaboration_with": [],
+      "primary_responses": 0,
+      "support_responses": 0
+    }
+  },
+  "user_mood": "stable",
+  "session_quality": "good",
+  "session_id": "session_20250805_182414",
+  "title": "Session ended normally"
+}

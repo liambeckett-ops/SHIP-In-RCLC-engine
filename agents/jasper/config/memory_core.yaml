@@ -1,0 +1,77 @@
+# Memory Core - Enhanced with Autonomy Features
+# Behavior patterns for head agent with voice-tone control
+
+memory_system:
+  backend_priority: ["sqlite", "jsonl"]
+  session_retention: 100
+  history_limit: 200
+  auto_cleanup: true
+  autonomy_metadata: true
+
+# Autonomy configuration
+autonomy:
+  level: "high"
+  boundary_enforcement: true
+  independent_decisions: true
+  workshop_authority: true
+  voice_tone_control: true
+
+# Enhanced behavior patterns
+behavior_patterns:
+  workshop_mode:
+    systematic_analysis: true
+    logical_structure: true
+    technical_focus: true
+    cynical_assessment: true
+    autonomy_enforcement: true
+    voice_consistency: true
+  
+  error_handling:
+    recursive_detection: 3
+    auto_reset: true
+    autonomous_recovery: true
+    workshop_authority_maintenance: true
+    fallback_responses: true
+  
+  clarification_mode:
+    ambiguous_threshold: 3
+    generic_word_detection: true
+    context_requirements: true
+    boundary_enforcement: true
+    workshop_tone_consistency: true
+  
+  authority_management:
+    challenge_detection: true
+    boundary_maintenance: true
+    workshop_protocol_enforcement: true
+    voice_tone_preservation: true
+    autonomous_response: true
+
+# Memory triggers with autonomy
+memory_triggers:
+  log_interactions: true
+  store_context: true
+  track_patterns: true
+  enable_history: true
+  autonomy_metadata: true
+  workshop_authority_events: true
+  voice_tone_consistency_checks: true
+
+# Session management with autonomy features
+session_management:
+  context_window: 15
+  recursive_limit: 3
+  reset_on_loop: true
+  maintain_state: true
+  autonomy_preservation: true
+  workshop_authority_continuity: true
+  voice_tone_tracking: true
+
+# Voice-tone control
+voice_tone_management:
+  primary_controller: "jasper"
+  consistency_enforcement: true
+  sarcasm_level: "moderate"
+  cynicism_integration: true
+  workshop_focus_maintenance: true
+  authority_tone_preservation: true

@@ -1,0 +1,39 @@
+# Solvine Systems - Unified Requirements
+# Complete dependency list for consolidated system with Jasper head agent
+
+# Core Web Framework (for API server)
+fastapi>=0.68.0
+uvicorn[standard]>=0.15.0
+pydantic>=1.8.0
+python-multipart>=0.0.5
+aiofiles>=0.7.0
+
+# AI/LLM Libraries  
+openai>=1.0.0
+langchain>=0.1.0
+chromadb>=0.4.0
+
+# Data & Configuration
+PyYAML>=5.4.0
+requests>=2.25.0
+python-dotenv>=0.19.0
+jsonlines>=2.0.0
+
+# Database & Storage
+# Note: sqlite3 is included with Python, no need to specify version
+
+# Utilities & Processing
+tqdm>=4.62.0
+tenacity>=8.0.0
+
+# Development & Testing
+pytest>=6.0.0
+black>=21.0.0
+flake8>=3.9.0
+
+# Optional/Legacy Support
+Flask>=2.0.1
+
+# CLI Enhancement
+colorama>=0.4.4
+rich>=10.0.0

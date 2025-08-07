@@ -1,0 +1,19 @@
+{
+  "total_sessions": 3,
+  "total_messages": 73,
+  "agent_stats": {
+    "jasper": 3
+  },
+  "topic_frequency": {
+    "technical": 3,
+    "personal": 2,
+    "boundary_work": 3
+  },
+  "emotional_patterns": {
+    "reflective": 3
+  },
+  "monthly_activity": {
+    "2025-08": 3
+  },
+  "agent_collaboration_patterns": {}
+}
