@@ -1,0 +1,45 @@
+{
+  "enabled_agents": ["aiven", "solvine"],
+  "speech_recognition": {
+    "engine": "whisper",
+    "language": "en-US",
+    "timeout": 10,
+    "phrase_timeout": 3
+  },
+  "text_to_speech": {
+    "engine": "pyttsx3",
+    "rate": 170,
+    "volume": 0.8
+  },
+  "voice_commands": {
+    "wake_words": ["hey aiven", "aiven", "hey solvine", "solvine"],
+    "stop_words": ["stop", "end conversation", "goodbye", "exit"]
+  },
+  "voice_profiles": {
+    "aiven": {
+      "voice_id": 0,
+      "rate": 180,
+      "volume": 0.8,
+      "pitch": 150,
+      "personality": "warm, empathetic, caring"
+    },
+    "solvine": {
+      "voice_id": 1,
+      "rate": 160,
+      "volume": 0.9,
+      "pitch": 120,
+      "personality": "confident, clear, strategic"
+    }
+  },
+  "installation_status": {
+    "installed": true,
+    "version": "1.0",
+    "install_date": "2025-08-14",
+    "components": {
+      "speech_recognition": true,
+      "text_to_speech": true,
+      "whisper_model": true,
+      "agent_integration": true
+    }
+  }
+}

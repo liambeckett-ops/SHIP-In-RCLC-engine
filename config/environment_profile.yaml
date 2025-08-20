@@ -1,0 +1,29 @@
+# Environment Profile
+# Apartment lifestyle and operational constraints
+
+living_space:
+  type: "apartment"
+  constraints:
+    - no_porch_recommendations: true
+    - patio_accessible: true
+    - indoor_focused_solutions: true
+  
+workspace_setup:
+  primary_location: "home_office"
+  equipment_available:
+    - multiple_monitors
+    - high_performance_computing
+    - voice_interaction_capable
+    
+operational_preferences:
+  interaction_style: "professional_efficient"
+  privacy_level: "high"
+  automation_comfort: "advanced"
+  
+environment_constraints:
+  - Respect apartment living limitations
+  - Focus on indoor/patio solutions over porch suggestions
+  - Consider noise levels and neighbor proximity
+  - Optimize for limited physical space
+
+# TODO: Replace with your actual environment profile data

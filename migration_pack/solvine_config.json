@@ -1,0 +1,5 @@
+{
+  "model_name": "llama3:instruct",
+  "temperature": 0.3,
+  "notes": "Change model_name to whatever you have in Ollama. Example: 'qwen2:7b-instruct'."
+}

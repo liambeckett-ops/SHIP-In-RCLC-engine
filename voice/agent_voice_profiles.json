@@ -1,0 +1,22 @@
+{
+  "Jasper": {
+    "rate": 180,
+    "volume": 0.8,
+    "voice_id": 0
+  },
+  "Midas": {
+    "rate": 160,
+    "volume": 0.8,
+    "voice_id": 1
+  },
+  "Aiven": {
+    "rate": 200,
+    "volume": 0.7,
+    "voice_id": 0
+  },
+  "Halcyon": {
+    "rate": 150,
+    "volume": 0.9,
+    "voice_id": 1
+  }
+}

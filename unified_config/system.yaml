@@ -1,0 +1,33 @@
+# Solvine System Configuration
+system:
+  name: "Solvine Agent Collective"
+  version: "2.0.0"
+  description: "Advanced AI Agent System with Jasper Head Agent"
+
+head_agent: "jasper"
+
+agents:
+  jasper:
+    type: "head_agent"
+    config_path: "agents/jasper/config/"
+    autonomy_features:
+      workshop_authority: true
+      boundary_enforcement: true
+      voice_tone_control: true
+      session_management: true
+      recursion_control: true
+
+interfaces:
+  web:
+    enabled: true
+    host: "localhost"
+    port: 8080
+  api:
+    enabled: true
+  cli:
+    enabled: true
+
+environments:
+  base:
+    memory_backend: "sqlite"
+    log_level: "info"
