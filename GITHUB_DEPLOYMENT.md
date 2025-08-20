@@ -3,8 +3,8 @@
 # After you've prepared your repository on GitHub, run these commands:
 
 # 0. Configure Git (first time setup)
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
+git config --global user.name "Liam Beckett Jorgensen"
+git config --global user.email "liambeckettj@gmail.com"
 git config --global core.editor "code --wait"
 git config --global init.defaultBranch main
 
