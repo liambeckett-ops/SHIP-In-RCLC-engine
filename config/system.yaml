@@ -4,43 +4,69 @@
 system:
   name: "Solvine Systems"
   version: "2.0.0"
-  head_agent: "jasper"
+  head_agent: "solvine"
   mode: "autonomous_collective"
+  checkpoint: 0907A
+  context: "Post-recalibration: Agent load redistribution for career and safety prompts"
 
-# Head agent configuration
+
+# Head agent configuration (Solvine)
 head_agent:
-  name: "jasper"
-  type: "voice_tone_controller"
+  name: "solvine"
+  type: "meta_coordinator"
   authority_level: "system_wide"
   autonomy_features:
     level: "high"
     boundary_enforcement: true
     independent_decisions: true
     workshop_authority: true
-    voice_tone_control: true
+    symbolic_synthesis: true
 
 # Agent collective configuration
 agents:
-  jasper:
+  solvine:
     type: "head_agent"
-    role: "Voice-Tone Controller / Workshop Authority / Boundary Enforcement"
+    role: "Meta-coordination & symbolic synthesis"
+    config_path: "agents/solvine/config/"
+    autonomy_level: "high"
+    authority: "system_wide"
+    profile: "CoreBrain"
+    excludes: []
+    tone: "adaptive"
+  jasper:
+    type: "tone_agent"
+    role: "Symbolic resonance & emotional mirroring"
     config_path: "agents/jasper/config/"
     autonomy_level: "high"
     authority: "system_wide"
-    voice_control: true
-    
-  # Placeholder for other agents
-  # midas:
-  #   type: "financial_agent"
-  #   role: "Financial Analysis & Strategy"
-  #   autonomy_level: "moderate"
-  #   authority: "domain_specific"
-  
-  # veilsynth:
-  #   type: "myth_guardian"
-  #   role: "Narrative & Myth Management"
-  #   autonomy_level: "moderate"
-  #   authority: "domain_specific"
+    profile: "SoftEcho"
+    excludes:
+      - "forecasting"
+      - "planning"
+      - "finance"
+    tone: "warm, reflective"
+  midas:
+    type: "career_agent"
+    role: "Career optimization & field strategy"
+    config_path: "agents/midas/config/"
+    autonomy_level: "moderate"
+    authority: "domain_specific"
+    profile: "CareerOps.v1"
+    excludes:
+      - "emotional analysis"
+      - "existential override"
+    tone: "pragmatic"
+  halcyon:
+    type: "safety_agent"
+    role: "Safety forecasting & civic override"
+    config_path: "agents/halcyon/config/"
+    autonomy_level: "moderate"
+    authority: "domain_specific"
+    profile: "CivicPulse.v1"
+    excludes:
+      - "finance"
+      - "emotional mirroring"
+    tone: "vigilant"
 
 # System-wide settings
 system_settings:
