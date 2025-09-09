@@ -1,5 +1,8 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QTextEdit, QLineEdit, QPushButton, QLabel, QHBoxLayout
+from PyQt5.QtWidgets import (
+    QApplication, QWidget, QVBoxLayout, QListWidget, QListWidgetItem,
+    QLineEdit, QPushButton, QLabel, QHBoxLayout, QFrame
+)
 from PyQt5.QtCore import Qt, pyqtSignal
 
 import threading
@@ -36,7 +39,6 @@ def get_agent_response(user_input):
     except Exception as e:
         return f"[Ollama error: {e}]"
 
-
 class ChatWindow(QWidget):
     memory = None
     agent_response_signal = pyqtSignal(str)
@@ -58,9 +60,9 @@ class ChatWindow(QWidget):
 
     def init_ui(self):
         layout = QVBoxLayout()
-        self.chat_display = QTextEdit()
-        self.chat_display.setReadOnly(True)
-        self.chat_display.setStyleSheet("font-size: 16px; background: #f8f8ff; color: #222;")
+        self.chat_display = QListWidget()
+        self.chat_display.setStyleSheet("background: #f8f8ff; border: none;")
+        self.chat_display.setFrameShape(QFrame.NoFrame)
 
         # Search bar
         self.search_line = QLineEdit()
@@ -108,9 +110,9 @@ class ChatWindow(QWidget):
             return
         results = self.memory.search_messages(query, limit=100)
         self.chat_display.clear()
-        self.chat_display.append(f"Search results for: '{query}'\n")
+        self.append_message("System", f"Search results for: '{query}'")
         if not results:
-            self.chat_display.append("No matches found.")
+            self.append_message("System", "No matches found.")
         else:
             for timestamp, sender, message in results:
                 self.append_message(sender, message)
@@ -131,51 +133,55 @@ class ChatWindow(QWidget):
 
     def display_agent_response(self, response):
         self.append_message("Solvine", response)
+
     def append_message(self, sender, message):
-        # Style user and bot messages differently, with indentation
+        # Create a custom QWidget for each message bubble
+        bubble = QWidget()
+        bubble_layout = QVBoxLayout()
+        bubble_layout.setContentsMargins(0, 0, 0, 0)
+        label = QLabel()
+        label.setWordWrap(True)
+        label.setTextInteractionFlags(Qt.TextSelectableByMouse)
         if sender.lower().startswith("you"):
-            # User message: blue, bold, light background, left aligned
-            html = f'<div style="background:#e6f0ff;padding:6px;margin:2px 0 2px 0;text-align:left;"><span style="color:#1a4fa3;font-weight:bold;">You:</span> <span style="font-size:16px;">{message}</span></div>'
+            label.setText(f'<span style="color:#1a4fa3;font-weight:bold;">You:</span> <span style="font-size:16px;">{message}</span>')
+            label.setStyleSheet("background:#e6f0ff; border-radius:18px 18px 18px 4px; border:2px solid #b3d1ff; padding:10px 16px; margin:8px 0 8px 0; font-size:16px;")
+            bubble_layout.setAlignment(Qt.AlignLeft)
         elif sender.lower().startswith("solvine"):
-            # Bot message: purple, bold, light background, indented right
-            html = f'<div style="background:#f3e6ff;padding:6px;margin:2px 0 2px 40px;text-align:left;"><span style="color:#7c2ae8;font-weight:bold;">Solvine:</span> <span style="font-size:16px;">{message}</span></div>'
+            label.setText(f'<span style="color:#7c2ae8;font-weight:bold;">Solvine:</span> <span style="font-size:16px;">{message}</span>')
+            label.setStyleSheet("background:#f3e6ff; border-radius:18px 18px 4px 18px; border:2px solid #c7a4f7; padding:10px 16px; margin:8px 0 8px 40px; font-size:16px;")
+            bubble_layout.setAlignment(Qt.AlignRight)
+        elif sender.lower().startswith("system"):
+            label.setText(f'<span style="color:#222;font-weight:bold;">{sender}:</span> <span style="font-size:16px;">{message}</span>')
+            label.setStyleSheet("background:#fffbe6; border-radius:18px; border:1px solid #ffe066; padding:10px 16px; margin:8px 0; font-size:16px;")
+            bubble_layout.setAlignment(Qt.AlignCenter)
         else:
-            # Other messages: default style
-            html = f'<div style="background:#f8f8ff;padding:6px;margin:2px 0;"><span style="color:#222;font-weight:bold;">{sender}:</span> <span style="font-size:16px;">{message}</span></div>'
-        self.chat_display.append(html)
-        def append_message(self, sender, message):
-            # Bubble effect for user and agent messages
-            if sender.lower().startswith("you"):
-                # User bubble: left, blue border, rounded
-                html = (
-                    '<div style="max-width:70%;margin:8px 0 8px 0;padding:10px 16px;'
-                    'background:#e6f0ff;border-radius:18px 18px 18px 4px;'
-                    'border:2px solid #b3d1ff;box-shadow:0 2px 8px #dbefff;'
-                    'display:inline-block;text-align:left;">'
-                    '<span style="color:#1a4fa3;font-weight:bold;">You:</span> '
-                    f'<span style="font-size:16px;">{message}</span></div>'
-                )
-            elif sender.lower().startswith("solvine"):
-                # Agent bubble: right, purple border, rounded
-                html = (
-                    '<div style="max-width:70%;margin:8px 0 8px 40px;padding:10px 16px;'
-                    'background:#f3e6ff;border-radius:18px 18px 4px 18px;'
-                    'border:2px solid #c7a4f7;box-shadow:0 2px 8px #e9d6fa;'
-                    'display:inline-block;text-align:left;">'
-                    '<span style="color:#7c2ae8;font-weight:bold;">Solvine:</span> '
-                    f'<span style="font-size:16px;">{message}</span></div>'
-                )
-            else:
-                # Other messages: default style
-                html = (
-                    '<div style="max-width:70%;margin:8px 0;padding:10px 16px;'
-                    'background:#f8f8ff;border-radius:18px;'
-                    'border:1px solid #ddd;box-shadow:0 2px 8px #eee;'
-                    'display:inline-block;text-align:left;">'
-                    f'<span style="color:#222;font-weight:bold;">{sender}:</span> '
-                    f'<span style="font-size:16px;">{message}</span></div>'
-                )
-            self.chat_display.append(html)
+            label.setText(f'<span style="color:#222;font-weight:bold;">{sender}:</span> <span style="font-size:16px;">{message}</span>')
+            label.setStyleSheet("background:#f8f8ff; border-radius:18px; border:1px solid #ddd; padding:10px 16px; margin:8px 0; font-size:16px;")
+            bubble_layout.setAlignment(Qt.AlignLeft)
+        bubble_layout.addWidget(label)
+        bubble.setLayout(bubble_layout)
+        item = QListWidgetItem()
+        item.setSizeHint(bubble.sizeHint())
+        self.chat_display.addItem(item)
+        self.chat_display.setItemWidget(item, bubble)
+
+    def voice_input(self):
+        recognizer = sr.Recognizer()
+        with sr.Microphone() as source:
+            self.append_message("System", "[Listening...]")
+            audio = recognizer.listen(source, timeout=5, phrase_time_limit=10)
+        try:
+            user_text = recognizer.recognize_google(audio)
+            self.append_message("You (voice)", user_text)
+            self.memory.add_message("You (voice)", user_text)
+            threading.Thread(target=self.handle_agent_response, args=(user_text,)).start()
+        except Exception as e:
+            self.append_message("System", f"[Voice Error] {e}")
+
+    def speak(self, text):
+        self.tts_engine.say(text)
+        self.tts_engine.runAndWait()
+    # self.chat_display.append(html)  # Removed: replaced by bubble system
 
     def voice_input(self):
         recognizer = sr.Recognizer()
